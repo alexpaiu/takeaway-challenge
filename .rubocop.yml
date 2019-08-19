@@ -67,7 +67,9 @@ Metrics/BlockLength:
 #   * Easy wins in expressiveness (e.g. guard clauses — nice opportunity to
 #     inject concretes)
 #   * Egregious non-idiomatic ruby like `def getFilename`
-
+AllCops:
+  Exclude:
+    - 'feature_test.rb'
 IndentationConsistency:
   Enabled: true
 IndentationWidth:
